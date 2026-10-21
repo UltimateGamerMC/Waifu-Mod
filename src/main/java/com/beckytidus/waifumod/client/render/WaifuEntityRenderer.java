@@ -78,9 +78,6 @@ public class WaifuEntityRenderer extends BipedEntityRenderer<WaifuEntity, WaifuE
         if (state.displayName != null) {
             queue.submitLabel(matrices, state.nameLabelPos, 0, state.displayName, !state.sneaking, state.light, state.squaredDistanceToCamera, cameraState);
         }
-        if (state.statsLabel != null) {
-            queue.submitLabel(matrices, state.nameLabelPos, 9, state.statsLabel, !state.sneaking, state.light, state.squaredDistanceToCamera, cameraState);
-        }
     }
 
     private void applyTexture(PlayerEntityRenderState state, Identifier tex) {
