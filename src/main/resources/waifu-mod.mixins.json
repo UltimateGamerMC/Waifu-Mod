@@ -1,0 +1,1 @@
+{"required":true,"package":"com.beckytidus.waifumod.mixin","compatibilityLevel":"JAVA_21","mixins":["PlayerManagerChatMixin"],"client":["EntityRenderManagerWaifuMixin","InGameHudWaifuStatsMixin"],"injectors":{"defaultRequire":1},"overwrites":{"requireAnnotations":true}}

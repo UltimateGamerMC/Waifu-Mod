@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "waifu-mod",
+	"version": "${version}",
+	"name": "Waifu Mod",
+	"description": "An anime-themed waifu companion with relationship mechanics, gift-giving, combat assistance, doki-doki dialogue, and romantic interactions.",
+	"authors": [
+		"Becky Tidus"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/waifu-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.beckytidus.waifumod.WaifuMod"
+		],
+		"client": [
+			"com.beckytidus.waifumod.WaifuModClient"
+		]
+	},
+	"mixins": [
+		"waifu-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
