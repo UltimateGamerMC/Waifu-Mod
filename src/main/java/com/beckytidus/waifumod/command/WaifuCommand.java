@@ -112,7 +112,7 @@ public class WaifuCommand {
                 .then(CommandManager.literal("texture")
                     .then(CommandManager.argument("variant", StringArgumentType.string())
                         .suggests((context, builder) -> {
-                            for (int i = 1; i <= 20; i++) builder.suggest(String.valueOf(i));
+                            for (int i = 1; i <= 13; i++) builder.suggest(String.valueOf(i));
                             builder.suggest("default");
                             builder.suggest("alt");
                             return builder.buildFuture();
@@ -177,31 +177,6 @@ public class WaifuCommand {
                             }
                             gf.setPersonality(p);
                             context.getSource().sendMessage(Text.literal("♥ Personality set to " + p.displayName));
-                            return 1;
-                        })
-                    )
-                )
-                .then(CommandManager.literal("outfit")
-                    .then(CommandManager.argument("name", StringArgumentType.word())
-                        .suggests((context, builder) -> {
-                            builder.suggest("default");
-                            builder.suggest("school");
-                            builder.suggest("maid");
-                            builder.suggest("kimono");
-                            builder.suggest("magical");
-                            builder.suggest("nurse");
-                            builder.suggest("catgirl");
-                            return builder.buildFuture();
-                        })
-                        .executes(context -> {
-                            WaifuEntity gf = getClosestWaifu(context.getSource());
-                            if (gf == null) {
-                                context.getSource().sendMessage(Text.literal("No waifu found nearby"));
-                                return 0;
-                            }
-                            String name = StringArgumentType.getString(context, "name");
-                            gf.setOutfit(name);
-                            context.getSource().sendMessage(Text.literal("♥ Outfit set to " + name));
                             return 1;
                         })
                     )

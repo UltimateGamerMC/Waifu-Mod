@@ -13,7 +13,7 @@ public final class WaifuSkins {
         "AriaofStars", "Prude", "xLmtshadow30"
     );
 
-    private static final int TEXTURE_COUNT = 20;
+    private static final int TEXTURE_COUNT = 13;
 
     public static String pickRandom(Random random) {
         return SKIN_OWNERS.get(random.nextInt(SKIN_OWNERS.size()));

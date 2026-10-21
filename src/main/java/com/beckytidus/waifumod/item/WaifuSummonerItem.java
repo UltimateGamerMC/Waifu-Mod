@@ -47,6 +47,6 @@ public class WaifuSummonerItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, TooltipDisplayComponent displayComponent, Consumer<Text> textConsumer, TooltipType type) {
-        textConsumer.accept(Text.literal("Summons your anime waifu companion (random name + texture 1-20). Stats: Lv, ♥Mood, Affection, Hunger, HP"));
+        textConsumer.accept(Text.literal("Summons your anime waifu companion (random name + one of 13 skins). Stats: Lv, ♥Mood, Affection, Hunger, HP"));
     }
 }

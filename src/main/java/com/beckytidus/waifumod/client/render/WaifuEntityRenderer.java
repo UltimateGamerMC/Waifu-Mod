@@ -48,17 +48,12 @@ public class WaifuEntityRenderer extends BipedEntityRenderer<WaifuEntity, WaifuE
         }
         state.statsLabel = entity.getStatsDisplayText();
         String skinName = entity.getSkinOwnerName();
-        String outfit = entity.getOutfit();
-        if (entity.isTransformed()) {
-            applyTexture(state, Identifier.of("waifu-mod", "entity/waifu_transform"));
-        } else if (skinName != null && !skinName.isEmpty()) {
+        if (skinName != null && !skinName.isEmpty()) {
             try {
                 state.skinTextures = ctx.getPlayerSkinCache().get(ProfileComponent.ofDynamic(skinName)).getTextures();
             } catch (Exception e) {
                 applyDefaultTexture(state, entity);
             }
-        } else if (outfit != null && !outfit.isEmpty() && !"default".equals(outfit)) {
-            applyTexture(state, Identifier.of("waifu-mod", "entity/waifu_outfit_" + outfit));
         } else {
             applyDefaultTexture(state, entity);
         }
@@ -98,7 +93,7 @@ public class WaifuEntityRenderer extends BipedEntityRenderer<WaifuEntity, WaifuE
         } else if (v != null && !v.isEmpty()) {
             try {
                 int n = Integer.parseInt(v);
-                if (n >= 1 && n <= 20) {
+                if (n >= 1 && n <= 13) {
                     tex = Identifier.of("waifu-mod", "entity/waifu_" + n);
                 } else {
                     tex = TEXTURE_DEFAULT;

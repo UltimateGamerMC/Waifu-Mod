@@ -18,7 +18,7 @@ Each waifu spawns with a random anime name (Sakura, Rem, Zero Two, Mikasa, Nezuk
 - **Headpats** — sneak + right-click with an empty hand to pat her head. She blushes, hearts and music notes pop, and affection rises.
 - **Bond aura** — as relationship grows you gain passive buffs: Regeneration at 50, Resistance + Regeneration at 75, Absorption at 100, with cherry-blossom particles.
 - **Anime food & gifts** — Onigiri, Pocky, Ramen, Bento, Taiyaki, and Mochi are craftable foods. Feeding them is the fastest way to win her over (Bento is best).
-- **Cosplay / outfits** — dress her in `school`, `maid`, `kimono`, `magical`, `nurse`, or `catgirl` outfits.
+- **13 hand-picked anime skins** — random on summon, or pick with `/waifu texture <1-13>`.
 
 ## How to Use
 
@@ -36,7 +36,6 @@ All commands affect **the waifu closest to you**. You must be a player.
 - `/waifu list` – Count and list nearby waifus with stats.
 - `/waifu stats` – Show the closest waifu's stats.
 - `/waifu personality <tsundere|yandere|kuudere|dandere|genki>` – Set her personality.
-- `/waifu outfit <default|school|maid|kimono|magical|nurse|catgirl>` – Set her outfit.
 - `/waifu transform` – Trigger the magical-girl transformation.
 - `/waifu relationship <0–100>` / `/waifu mood <0–100>` – Set relationship / mood.
 - `/waifu texture <default|alt|1–20>` – Set skin texture variant.
