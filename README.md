@@ -1,5 +1,7 @@
 # Waifu Mod
 
+[![Modrinth](https://img.shields.io/badge/Modrinth-anime--waifu-00AF5C)](https://modrinth.com/mod/anime-waifu)
+
 An anime-themed Fabric companion mod for Minecraft 1.21.11. Summon your own waifu — she follows you, fights for you, calls you "senpai," chats back when you type, and grows stronger as your bond deepens.
 
 Each waifu spawns with a random anime name (Sakura, Rem, Zero Two, Mikasa, Nezuko, Frieren…) and a random skin. Built on the same companion engine as Girlfriend Mod, but with anime-specific mechanics:
